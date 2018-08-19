@@ -1,0 +1,10 @@
+---
+- name: Send config files
+  copy:
+   src: "{{item.a}}"
+   dest: "{{item.b}}"
+  with_items:
+   - {a: "{{file1}}",b: "{{dest1}}"}
+   - {a: "{{file2}}",b: "{{dest1}}"}
+  notify:
+   - restart_tomcat7

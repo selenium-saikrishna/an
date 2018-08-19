@@ -1,0 +1,13 @@
+---
+# vars file for tomcat
+pkg1: tomcat7
+pkg2: tomcat7-admin
+state1: present
+state2: restarted
+cache1: yes
+cache2: no
+file1: tomcat-users.xml
+file2: server.xml
+dest1: /etc/tomcat7
+
+...

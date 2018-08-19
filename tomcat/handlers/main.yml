@@ -1,0 +1,7 @@
+---
+# handlers file for tomcat
+- name: restart_tomcat7
+  service:
+   name: "{{pkg1}}"
+   state: "{{state2}}"
+...
